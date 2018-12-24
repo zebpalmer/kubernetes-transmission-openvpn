@@ -14,8 +14,32 @@ at least a year. You can find documentation (worth reading) for that project in 
 **Applying the examples here as-is will not work.**
 
 I've scrubbed out configuration unique to the two clusters I'm running transmission in. You'll need to look through 
-the examples and edit where appropriate. 
+the examples and edit where appropriate. This example uses a central NFS server to host all Transmission data. 
+you could of course use any other volume type available in your cluster. The ingress example does not configure TLS
+ and is restricted to a local IP subnet. 
 
+Some specific things you should adjust or confirm for your purposes:
+
+* Ingress
+  * Hostname
+  * Service Name 
+  * IP restrictions 
+* Service
+  * Name
+  * Type
+* Deployment
+  * Secret name
+  * Config name
+  * data volume type, server, path
+* Config
+  * openvpn provider (see docs [here](https://github.com/haugene/docker-transmission-openvpn))
+  * local network 
+  * openvpn config
+* Secret
+  * username
+  * password
+  
+  
 
 
 ## FAQ
