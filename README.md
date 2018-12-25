@@ -48,7 +48,7 @@ Some specific things you should adjust or confirm for your purposes:
 #### Have you considered making this a helm chart?
 
 Briefly. Not going to. I don't have the time to maintain a helm chart for this. I only provide this in hopes 
-of saving someone time by having an working example to consult. 
+of saving someone time by having a working example to consult. 
 
 #### Are there other ways to do this? 
 
