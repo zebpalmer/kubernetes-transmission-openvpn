@@ -35,7 +35,7 @@ Some specific things you should adjust or confirm for your purposes:
   * openvpn provider (see docs [here](https://github.com/haugene/docker-transmission-openvpn))
   * local network 
   * openvpn config
-* Secret
+* Secret (will need to be base64 encoded)
   * username
   * password
   
