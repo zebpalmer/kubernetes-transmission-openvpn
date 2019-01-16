@@ -36,7 +36,9 @@ spec:
           tcpSocket:
             port: 9091
           timeoutSeconds: 2
-        resources: {}
+        resources:
+          limits:
+            memory: 2000Mi
         securityContext:
           allowPrivilegeEscalation: true
           capabilities:
