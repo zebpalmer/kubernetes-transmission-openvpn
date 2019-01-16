@@ -4,6 +4,8 @@ metadata:
   name: transmission-ingress
   namespace: transmission
 spec:
+  selector:
+    app:  transmission
   ports:
   - port: 9091
     protocol: TCP
