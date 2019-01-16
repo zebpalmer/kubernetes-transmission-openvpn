@@ -43,13 +43,6 @@ spec:
             add:
             - NET_ADMIN
           privileged: true
-          procMount: Default
-          readOnlyRootFilesystem: false
-          runAsNonRoot: false
-        stdin: true
-        terminationMessagePath: /dev/termination-log
-        terminationMessagePolicy: File
-        tty: true
         volumeMounts:
         - mountPath: /data
           name: data
@@ -58,10 +51,7 @@ spec:
         - mountPath: /etc/localtime
           name: localtime
           readOnly: true
-      dnsPolicy: ClusterFirst
       restartPolicy: Always
-      schedulerName: default-scheduler
-      securityContext: {}
       terminationGracePeriodSeconds: 30
       volumes:
       - name: data
@@ -76,4 +66,3 @@ spec:
           path: /etc/localtime
           type: ""
         name: localtime
-
